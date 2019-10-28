@@ -30,20 +30,20 @@ Our main base dataset is a kaggle one [Chicago Food Inspections](https://www.kag
 
 # A list of internal milestones up until project milestone 2
 
-## Week 1 (28.10. - 4.11.)
+## Week 1 (28.10. - 3.11.)
 1. **Getting the data:** fetching datasets, accessing APIs, web scraping.
 2. **Exploratory analysis:** get the first feeling of what is included in the data, how can various datasets be combined - what data are we missing?
 3. **Get the missing data:** find datasources for what we realized is missing for the coherent analysis&ast;.
 
-## Week 2 (4.11. - 11.11.)
+## Week 2 (4.11. - 10.11.)
 4. **Make data analysis-friendly:** clean datasets, make them compatible and suitable for joint analysis&ast;.
 5. **Process violation notes:** categorize data from violations column in the main inspections dataset to extract clear reasons why some restaurants haven't passed inspections.
 
-## Week 3 (11.11. - 18.11.)
+## Week 3 (11.11. - 17.11.)
 6. **Exploring analysis possibilities:** NLP techniques on customer reviews (e.g. sentiment analysis, keyword extraction).
 7. **Discovering and observing trends:** getting first answers to our questions.
 
-## Week 4 (18.11. - 25.11.)
+## Week 4 (18.11. - 24.11.)
 8. **Visualization of the results:** generating ideas for captivating visualizations and preparing first tryout versions that we will use in our data story: annotated maps, trend graphs etc.
 9. **Preparing the notebook**: finishing the notebook and explaining the results.
 
