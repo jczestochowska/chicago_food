@@ -108,3 +108,6 @@ data/raw
 
 # jet brains
 .idea
+
+# api keys
+api_keys
