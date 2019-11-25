@@ -1,4 +1,4 @@
-# ADA Milestone 1
+# ADA Milestone 2
 
 # Title: Where (not) to eat in Chicago?  
 
@@ -17,42 +17,32 @@ A list of research questions we would like to address during our analysis:
 2. Are there "safe to eat" areas or "dangerous to eat" areas in Chicago?
 3. Checking restaurants history of inspections, how are restaurants or whole areas changing in their inspection scores? Can one see any patterns in improvements with respect to inspection results? Are there areas/restaurant chains/restaurant types that follow some trends?
 4. How is restaurant performance in terms of inpection results related to geodemographic charactestics of the area (e.g. Life Quality Index)?
-5. How are inspection results connected to customer reviews? Are the best scored restaurants the ones with the best inspection results as well? Which client-reported issues are also noticed by inspections? Which issues are only discovered by inspections?
+5.~~How are inspection results connected to customer reviews? Are the best scored restaurants the ones with the best inspection results as well? Which client-reported issues are also noticed by inspections? Which issues are only discovered by inspections?~~
 
 # Dataset
 
 Our main base dataset is a kaggle one [Chicago Food Inspections](https://www.kaggle.com/chicago/chicago-food-inspections) which contains information about sanitary inspections performed by staff from the Chicago Department of Public Health’s Food Protection Program in restaurants, grocery stores and other food related sites in city of Chicago. Data span is: since 1 January 2010 to the present. We want to focus specifically on restaurants. Dataset consists of various inspection related information like: inspection date, inspection type, results of inspection, violations a restaurant commited but also geographical data like zip code or area in which restaurant is located. To answer all our questions we will enrich it with:
 
-1. Customers reviews about restaurant using e.g: [Yelp API](https://www.yelp.com/developers/documentation/v3/business_reviews), [Yelp Dataset](https://www.yelp.com/dataset/documentation/main), [Google Places API](https://developers.google.com/places/web-service/details) or others. Yelp Dataset is 9GB sized JSON dataset. We are not sure if all the restaurants from Chicaco Food Inspections are present there, therefore it might be easier to use Yelp API to query the restaurants we need. Yelp API can also provide information about restaurant price range, what kind of food it serves or opening hours. Those features could improve our knowledge base.
+1. Customers reviews and ratings about restaurant using [Google Places API](https://developers.google.com/places/web-service/details). Google Places API can also provide information about restaurant price range. Those features could improve our knowledge base.
 3. [Chicago districts geolocation](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-ZIP-Codes/gdcf-axmw) to use for visualization purposes in questions 2. and 4.
 4. [PlaceILive](https://chicago.placeilive.com/map#41.80919639152055/-87.72926330566406/10) website which has information about Life Quality Index in neighborhoods of (mainly) US cities.
+
     
 
-# A list of internal milestones up until project milestone 2
+# A list of internal milestones up until project milestone 3
 
-## Week 1 (28.10. - 3.11.)
-1. **Getting the data:** fetching datasets, accessing APIs, web scraping.
-2. **Exploratory analysis:** get the first feeling of what is included in the data, how can various datasets be combined - what data are we missing?
-3. **Get the missing data:** find datasources for what we realized is missing for the coherent analysis&ast;.
+1. For the next milestone we are going to analyze spatial patterns within Chicago for the most common violations per neighborhood. Also, violations discovered during inspections can serve as another measure for ranking places where to eat in Chicago, i.e. we can use percentage of passed inspections or (more detailed) percentage of passed inspections with no food related violations for gauging the quality and safety of restaurants in particular neighbourhood. Establishing such additional measures may help us in responding to the main project question based on not that commonly analyzed aspects and propose safe to eat neighbourhoods based on such measure.
+2. We plan to explore further the "safe vs. dangerous" areas by choosing several criteria. We plan to check how Risk feature impacts that separation, as well as try to find other metrics which could be relevant for this analysis.
+3. Our goal for the next milestone is to study more indicators of restaurant quality, such as the risk level and violation categories, and their evolution over time. Particularly, it would be interesting to find which areas show the most potential for future improvement. We could also check whether certain restaurant chains (Subway, Starbucks...) follow certain trends.
+4. Our aim in the next milestone will be to check if there is a relationship between "safe or dangerous" neighborhoods to eat and life quality index in those neighborhoods.
 
-## Week 2 (4.11. - 10.11.)
-4. **Make data analysis-friendly:** clean datasets, make them compatible and suitable for joint analysis&ast;.
-5. **Process violation notes:** categorize data from violations column in the main inspections dataset to extract clear reasons why some restaurants haven't passed inspections.
 
-## Week 3 (11.11. - 17.11.)
-6. **Exploring analysis possibilities:** NLP techniques on customer reviews (e.g. sentiment analysis, keyword extraction).
-7. **Discovering and observing trends:** getting first answers to our questions.
+ Plan of the data story : 
+1. Are there "safe to eat" areas or "dangerous to eat" areas in Chicago? Areas classified by inspection results. (different criteria: inspection score, percentage of restaurant failing inspections, risk)
+2. The most common reasons for a restaurant not passing an inspection. Most common reasons per area, classification of areas per most common violation categories, most common violations in Chicago and per inspection type (Canvas, License, customer complaint). Visualizing violation patterns in Chicago.
+3. Checking restaurants history of inspections, how are restaurants or whole areas changing in their inspection results? Which areas show the highest potential for improvement? Are there areas/restaurant chains/restaurant types that follow some trends?
+4. How is restaurant performance in terms of inpection results related to geodemographic charactestics of the area (e.g. Life Quality Index)?
 
-## Week 4 (18.11. - 24.11.)
-8. **Visualization of the results:** generating ideas for captivating visualizations and preparing first tryout versions that we will use in our data story: annotated maps, trend graphs etc.
-9. **Preparing the notebook**: finishing the notebook and explaining the results.
-
-&ast; Knowing the back-and-forths of data wrangling processs the above schedule is a rough outline of our main priorities for the upcoming weeks.
-    
-
-# Questions for TAs
-
-1. Are we too broad with our research questions? Should we focus on one big conclusion, or can we do several general ones?
-2. How final are the research questions? It's likely that we will discover something interesting during data analysis, which we didn't forsee coming up. We might want then to switch focus to this particular thing. Can the research questions be modified at that point?
-3. What would be the best source for customer reviews?
+Goals until milestone 3 : 
+- Build a better heuristic to evaluate restaurant safety
 
