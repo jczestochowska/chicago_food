@@ -29,9 +29,12 @@ Our main base dataset is a kaggle one [Chicago Food Inspections](https://www.kag
 3. [Chicago districts geolocation](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-ZIP-Codes/gdcf-axmw) to use for visualization purposes in questions 2. and 4.
 4. [PlaceILive](https://chicago.placeilive.com/map#41.80919639152055/-87.72926330566406/10) website which has information about Life Quality Index in neighborhoods of (mainly) US cities.
 
-The following internal milestones and data story plan can be also found at the end of the `project_milestone2.ipynb` notebook.
+# Progress done up until milestone 2
 
-# A list of internal milestones up until project milestone 3
+Up until milestone 2 we managed to familirize ourselves with the data we're working with and obtain some first results that form the first answers to the research questions we posed. We decided to drop one research question. Also, we started visualizing our results in the form that will be the target one, which are maps of Chicago with marked neighborhoods.
+
+# Internal milestones up until project milestone 3
+**The same list can be also found at the end of the `project_milestone2` notebook**
 
 The plans are split by research queations to which they apply:
 
@@ -53,6 +56,7 @@ The plans are split by research queations to which they apply:
 
 
 # Data story plan
+**The same plan can be also found at the end of the `project_milestone2` notebook**
 
 1. We begin it by general statistics and results based on simple metrics that should bring suspected results (such as the ones we obtained, where the city center and the airport proved to be the safest places to eat).
 2. We dive deeper by constructing more complicated metrics based on inspection results and violations.
