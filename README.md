@@ -17,7 +17,7 @@ A list of research questions we would like to address during our analysis:
 2. Are there "safe to eat" areas or "dangerous to eat" areas in Chicago?
 3. Checking restaurants history of inspections, how are restaurants or whole areas changing in their inspection scores? Can one see any patterns in improvements with respect to inspection results? Are there areas/restaurant chains/restaurant types that follow some trends?
 4. How is restaurant performance in terms of inpection results related to geodemographic charactestics of the area (e.g. Life Quality Index)?
-5.~~How are inspection results connected to customer reviews? Are the best scored restaurants the ones with the best inspection results as well? Which client-reported issues are also noticed by inspections? Which issues are only discovered by inspections?~~
+5. ~~How are inspection results connected to customer reviews? Are the best scored restaurants the ones with the best inspection results as well? Which client-reported issues are also noticed by inspections? Which issues are only discovered by inspections?~~
 
 # Dataset
 
