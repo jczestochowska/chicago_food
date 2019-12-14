@@ -1,6 +1,9 @@
 import copy
+import os
 import re
 import json
+import pandas as pd
+import numpy as np
 import plotly.graph_objects as go
 
 def insert_variables_as_properties_in_geodata(geodata, dataframe, zip_column, variable_names):
@@ -31,7 +34,18 @@ def load_geodata(geodata_path, id_property='zip'):
             feature['id'] = feature['properties'][id_property]
         return geodata
 
-def plot_map(title, geodata_path, dataframe, zip_column, value_column, template):
+def get_center_coordinates(geodata):
+    # get neighborhoods latitudes and longitudes
+    centers = []
+    for area in geodata['features']:
+        area_coords = np.array(area['geometry']['coordinates'][0][0])
+        longitudes = area_coords[:, 0]
+        latitudes = area_coords[:, 1]
+        centers.append([0.5 * (longitudes.min() + longitudes.max()), 0.5 * (latitudes.min() + latitudes.max())])
+    centers = np.array(centers)
+    return centers[:, 0].mean(), centers[:, 1].mean()
+
+def plot_map(title, geodata_path, dataframe, zip_column, value_column, template, mapbox_access_token):
     '''
     title: plot title
     
@@ -57,6 +71,7 @@ def plot_map(title, geodata_path, dataframe, zip_column, value_column, template)
     
     # load geodata
     geodata = load_geodata(geodata_path)
+    center_longitude, center_latitude = get_center_coordinates(geodata)
     
     # prepare data
     columns = dataframe.columns.values
@@ -74,7 +89,7 @@ def plot_map(title, geodata_path, dataframe, zip_column, value_column, template)
     figure.update_layout(
         title=title,
         font={'family': 'Arial Black'},
-        mapbox_accesstoken=MAPBOX_ACCESS_TOKEN,
+        mapbox_accesstoken=mapbox_access_token,
         mapbox_zoom=9.5,
         mapbox_pitch=40,
         mapbox_bearing=70,
@@ -82,9 +97,8 @@ def plot_map(title, geodata_path, dataframe, zip_column, value_column, template)
     )
     figure.show()
 
-def example_plot_map():
+def example_plot_map(mapbox_access_token):
     # Put your mapbox token in variable of this name
-    MAPBOX_ACCESS_TOKEN = 'yourTokenHere'
     chicago_geodata_path = 'data/chicago-zip.json'
     
     # Only to get some data for example dataframe
@@ -95,4 +109,4 @@ def example_plot_map():
     df = pd.DataFrame({'zips': zips, 'values': zips, 'var1': np.arange(0, len(zips)), 'var2': np.arange(1, len(zips)+1)})
     
     # Plot map
-    plot_map('Chicago Neighborhoods', chicago_geodata_path, df, 'zips', 'values', 'Some {} text {}')
+    plot_map('Chicago Neighborhoods', chicago_geodata_path, df, 'zips', 'values', 'Some {} text {}', mapbox_access_token)
