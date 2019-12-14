@@ -33,7 +33,9 @@ def load_geodata(geodata_path, id_property='zip'):
 
 def plot_map(title, geodata_path, dataframe, zip_column, value_column, template):
     '''
-    geodata: geodata loaded to python dictionary (use load_geodata)
+    title: plot title
+    
+    geodata_path: path to the geojson file
     
     dataframe: Dataframe with columns: 
       - zip (column name specified in zip_column),
