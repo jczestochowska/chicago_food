@@ -1,8 +1,8 @@
 # Title: Where (not) to eat in Chicago?
 
-# Milestone 2: 
+# Milestone 3: 
 
-To see the notebook in the nbviewer [follow this link](https://nbviewer.jupyter.org/github/jczestochowska/chicago_food/blob/master/project_milestone2.ipynb)
+Check out our data story [here](https://jczestochowska.github.io/)
 
 # Abstract
 
@@ -26,8 +26,18 @@ A list of research questions we would like to address during our analysis:
 Our main base dataset is a kaggle one [Chicago Food Inspections](https://www.kaggle.com/chicago/chicago-food-inspections) which contains information about sanitary inspections performed by staff from the Chicago Department of Public Health’s Food Protection Program in restaurants, grocery stores and other food related sites in city of Chicago. Data span is: since 1 January 2010 to the present. We want to focus specifically on restaurants. Dataset consists of various inspection related information like: inspection date, inspection type, results of inspection, violations a restaurant commited but also geographical data like zip code or area in which restaurant is located. To answer all our questions we will enrich it with:
 
 1. Customers reviews and ratings about restaurant using [Google Places API](https://developers.google.com/places/web-service/details). Google Places API can also provide information about restaurant price range. Those features could improve our knowledge base. **As described in the notebook, we drop the question number 5 and we won't use the reviews**
-3. [Chicago districts geolocation](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-ZIP-Codes/gdcf-axmw) to use for visualization purposes in questions 2. and 4.
+2. [Chicago zip codes geolocation](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-ZIP-Codes/gdcf-axmw) to use for visualization purposes in questions 2. and 4.
+3. [Chicago community areas geolocation](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-current-/cauq-8yn6)
 4. [PlaceILive](https://chicago.placeilive.com/map#41.80919639152055/-87.72926330566406/10) website which has information about Life Quality Index in neighborhoods of (mainly) US cities.
+
+# Group members
+
+- Justyna Czestochowska: scapping data from Google, Life Quality index analysis, Descriptive Analysis, Jekull setup, plotting, Data story
+- Maja Stamenkovic: Classification of violations, Analysis of Safe and Dangerous neighborhoods, working with Community areas, Data story
+- Jakub Gwizdala: Data cleaning, Map plotting, Violations encoding and visualization, Data story
+- Elias Hariz: Evolution of restaurants, Restaurant-chain analysis, Analysis by risk, Data story
+
+Final presentation: 
 
 # Progress done up until milestone 2
 
