@@ -4,6 +4,8 @@
 
 Check out our data story [here](https://jczestochowska.github.io/)
 
+In order to see all the plots, check out the `project_milestione_3.html` (HTML version of the notebook).
+
 # Abstract
 
 With more than 14'000 restaurants, food is a serious business in Chicago. But choosing where to eat is not an easy task, especially when you want to avoid risky places. Our choices are usually affected by the reviews of other visitors and the location of the restaurant. But do we ever wonder if a restaurant fulfils all sanitary standards?
@@ -37,7 +39,7 @@ Our main base dataset is a kaggle one [Chicago Food Inspections](https://www.kag
 - Jakub Gwizdala: Data cleaning, Map plotting, Violations encoding and visualization, Data story
 - Elias Hariz: Evolution of restaurants, Restaurant-chain analysis, Analysis by risk, Data story
 
-Final presentation: 
+Final presentation: Elias Hariz, Maja Stamenkovic
 
 # Progress done up until milestone 2
 
