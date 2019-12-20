@@ -1,10 +1,12 @@
 # Title: Where (not) to eat in Chicago?
 
-# Milestone 3: 
+# Milestone 3 
 
 Check out our data story [here](https://jczestochowska.github.io/)
 
 In order to see all the plots, check out the `project_milestione_3.html` (HTML version of the notebook).
+
+We also provide nbviewer [here](https://nbviewer.jupyter.org/github/jczestochowska/chicago_food/blob/master/project_milestone3.ipynb) (but it seems that not all the plots are shown).
 
 # Abstract
 
@@ -41,11 +43,13 @@ Our main base dataset is a kaggle one [Chicago Food Inspections](https://www.kag
 
 Final presentation: Elias Hariz, Maja Stamenkovic
 
-# Progress done up until milestone 2
+# Previous milestone
+
+## Progress done up until milestone 2
 
 Up until milestone 2 we managed to familirize ourselves with the data we're working with and obtain some first results that form the first answers to the research questions we posed. We decided to drop one research question. Also, we started visualizing our results in the form that will be the target one, which are maps of Chicago with marked neighborhoods.
 
-# Internal milestones up until project milestone 3
+## Internal milestones up until project milestone 3
 **The same list can be also found at the end of the `project_milestone2` notebook**
 
 The plans are split by research queations to which they apply:
@@ -67,7 +71,7 @@ The plans are split by research queations to which they apply:
  - check if there is a relationship between "safe or dangerous" neighborhoods to eat and life quality index in those neighborhoods.
 
 
-# Data story plan
+## Data story plan
 **The same plan can be also found at the end of the `project_milestone2` notebook**
 
 1. We begin it by general statistics and results based on simple metrics that should bring suspected results (such as the ones we obtained, where the city center and the airport proved to be the safest places to eat).
