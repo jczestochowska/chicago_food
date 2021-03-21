@@ -36,7 +36,7 @@ Our main base dataset is a kaggle one [Chicago Food Inspections](https://www.kag
 
 # Group members
 
-- Justyna Czestochowska: scapping data from Google, Life Quality index analysis, Descriptive Analysis, Jekull setup, plotting, Data story
+- Justyna Czestochowska: scrapping data from Google, Life Quality index analysis, Descriptive Analysis, Jekyll setup, plotting, Data story
 - Maja Stamenkovic: Classification of violations, Analysis of Safe and Dangerous neighborhoods, working with Community areas, Data story
 - Jakub Gwizdala: Data cleaning, Map plotting, Violations encoding and visualization, Data story
 - Elias Hariz: Evolution of restaurants, Restaurant-chain analysis, Analysis by risk, Data story
